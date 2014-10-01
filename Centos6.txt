@@ -1,3 +1,24 @@
+INSTALL FROM EPEL
+## Install EPEL repository for RHEL/CentOS 6.5/6.4/6.3/6.2/6.1/6.0 ##
+wget Uvh
+http://download.fedoraproject.org/pub/epel/6/i386/epel-release-6-8.noarch.rpm
+rpm -Uvh epel-release-6-8.noarch.rpm
+
+## Install Remi repository for RHEL/CentOS 6.5/6.4/6.3/6.2/6.1/6.0 ##
+wget http://rpms.famillecollet.com/enterprise/remi-release-6.rpm
+rpm -Uvh remi-release-6.rpm
+
+
+sudo yum --enablerepo=epel install llvm-devel
+sudo yum --enablerepo=epel install clang
+sudo yum install llvm-libs
+sudo yum install llvm-static
+
+
+
+
+-------------------------------------------------
+OLD NOTE:
 Centos 6 comes with very old gcc that does not work. 
 
 1. first import CPG:
